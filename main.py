@@ -1,12 +1,11 @@
 import os
+import re 
 from translitua import translit
 
 inbox_path = './inbox'
 
-import re 
 def has_cyrillic(text):
     return bool(re.search('[а-яА-Я]', text))
-
 
 def main():
     contents = os.listdir(inbox_path)
