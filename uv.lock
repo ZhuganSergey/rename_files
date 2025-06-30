@@ -1,0 +1,36 @@
+version = 1
+revision = 2
+requires-python = ">=3.13"
+
+[[package]]
+name = "cyrtranslit"
+version = "1.1.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/32/3e/b9f6d47b8326a263251c4ca0d1710010778a1654f0ee1ebbdf75376726e8/cyrtranslit-1.1.1.tar.gz", hash = "sha256:04edd4c89b1a4611b81de609f5c91f91afae980c728dea2f09522d7b10f73228", size = 17927, upload-time = "2023-03-14T22:41:53.715Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b9/09/96818910b17cae199c3183aab7a8e3e9b694337c4673b36dc7165bb0c440/cyrtranslit-1.1.1-py3-none-any.whl", hash = "sha256:51b65cb0497042231bce2951fd2df1fb8f659fc20ac355a1044e578b97870256", size = 14172, upload-time = "2023-03-14T22:41:51.445Z" },
+]
+
+[[package]]
+name = "rename-files"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "cyrtranslit" },
+    { name = "translitua" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "cyrtranslit", specifier = ">=1.1.1" },
+    { name = "translitua", specifier = ">=1.3.2" },
+]
+
+[[package]]
+name = "translitua"
+version = "1.3.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/6f/fe/75a61be2ecc84cb810fa533582957a81157300382e8589a481d261d0d490/translitua-1.3.2.tar.gz", hash = "sha256:3e7fb82519d0bf2ed93779f2f441113d57b84ffa934d7515b23bf3b0293adbf1", size = 11151, upload-time = "2023-01-19T23:48:56.813Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/14/17/ab06c056cb62680832db4e1cc5359514461c36cc251b30b03a62ce4fcf7d/translitua-1.3.2-py2.py3-none-any.whl", hash = "sha256:75d2a4a69b627f3cae2e831c83405cc0b7ee325bbe40be4073a3346c58a7b44c", size = 9090, upload-time = "2023-01-19T23:48:54.819Z" },
+]
